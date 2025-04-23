@@ -44,12 +44,12 @@ public final class BinaryTree {
         return sb.toString();
     }
 
-    /** True iff this tree is a binary search tree. */
+    /** True if this tree is a binary search tree. */
     public boolean isBST() {
         return checkBST(root, Long.MIN_VALUE, Long.MAX_VALUE);
     }
 
-    /** True iff this tree is height‐balanced (every node’s subtrees differ by ≤1). */
+    /** True if this tree is height‐balanced (every node’s subtrees differ by ≤1). */
     public boolean isBalanced() {
         return checkBalanced(root).balanced;
     }
